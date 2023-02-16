@@ -10,7 +10,7 @@ function contar(){
         window.alert('Passo inválido!.Considerando Passo com valor 1.')
         p = 1
     }else if (f > i){
-        for (var num = 0 , )
+        for (var num = 0 , num != f )
     }
 
     
