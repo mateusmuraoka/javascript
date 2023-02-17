@@ -1,16 +1,37 @@
 function contar(){
-    var i = window.document.getElementById('i')
-    var f = window.document.getElementById('f')
-    var p = window.document.getElementById('p')
+    var ini = window.document.getElementById('txti')
+    var fim = window.document.getElementById('txtf')
+    var pas = window.document.getElementById('txtp')
     var res = window.document.getElementById('res')
-    if (i.value == '' || f.value == ''){
+    if (ini.value == '' || fim.value == '' || pas.value ==''){
         res.innerText = 'Impossível contar!'
 
-    }else if (p.value == ''){
-        window.alert('Passo inválido!.Considerando Passo com valor 1.')
-        p = 1
-    }else if (f > i){
-        for (var num = 0 , num != f )
+    }else{
+        res.innerHTML = 'Contando:'
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(pas.value)
+        let c = i
+        if (i < f){
+            while (c <= f){
+                res.innerHTML += `${c} \u{1F449} `
+                c = c + p
+                
+                
+    
+    
+            }
+            res.innerHTML += `\u{1F3C1}`
+           
+
+        }else if (i > f){
+            while(c >= f){
+                res.innerHTML += `${c} \u{1F449} `
+                c = c - p
+            }
+            res.innerHTML += `\u{1F3C1}`
+        }
+       
     }
 
     
