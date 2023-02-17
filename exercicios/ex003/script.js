@@ -12,7 +12,13 @@ function contar(){
         let f = Number(fim.value)
         let p = Number(pas.value)
         let c = i
+        if ( p <= 0){
+            window.alert('Passo inválido!Considerando passo 1.')
+            p = 1
+
+        }
         if (i < f){
+            //Contagem Crescente
             while (c <= f){
                 res.innerHTML += `${c} \u{1F449} `
                 c = c + p
@@ -26,6 +32,7 @@ function contar(){
 
         }else if (i > f){
             while(c >= f){
+                //Contagem decrescente
                 res.innerHTML += `${c} \u{1F449} `
                 c = c - p
             }
