@@ -28,4 +28,10 @@ main > section{
 main > section > div{
     padding:10px;
 }
+footer > p{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
 
