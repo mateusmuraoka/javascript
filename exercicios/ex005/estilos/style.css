@@ -20,11 +20,12 @@ main > div{
     border-radius: 10px;
     margin: auto;
     width: 500px;
-    height: 200px;
+    
     
 }
 main > div > p{
     padding: 10px;
+    
 }
 footer > p{
     color: white;
